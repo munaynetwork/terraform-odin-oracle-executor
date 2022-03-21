@@ -7,13 +7,13 @@ variable "create_odin_oracle_executor" {
 variable "package_url" {
   description = "The URL where Odin Oracle Executor package can be found"
   type        = string
-  default     = "https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MZlKBpqEGYICIBcvDa3%2Fuploads%2FS5cNqkfzQDpTs48OqZva%2Fodin_oracle_executor.zip?alt=media&token=4ed5ffa9-ee73-4804-bcd3-2e429ccda6e2"
+  default     = "https://github.com/bandprotocol/data-source-runtime/releases/download/v2.0.1/lambda-yoda.zip"
 }
 
 variable "memory_size" {
   description = "The memory allocated for the Odin Oracle Executor lambda function (in MB)"
   type        = number
-  default     = 512
+  default     = 1024
 }
 
 variable "timeout" {
@@ -36,7 +36,7 @@ variable "runtime" {
 variable "env_max_data_size" {
   description = "The Odin Oracle Executor MAX_DATA_SIZE env var"
   type        = number
-  default     = 256
+  default     = 512
 }
 
 variable "env_max_executable" {

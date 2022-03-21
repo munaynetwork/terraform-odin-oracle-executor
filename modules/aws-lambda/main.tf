@@ -22,7 +22,7 @@ resource "null_resource" "download_package" {
 module "lambda_function" {
   count   = var.create_odin_oracle_executor ? 1 : 0
   source  = "terraform-aws-modules/lambda/aws"
-  version = "~> 2.27.1"
+  version = "~> 2.35.1"
 
   create_package         = false
   publish                = true
